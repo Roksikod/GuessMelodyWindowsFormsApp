@@ -38,8 +38,16 @@ namespace GuessMelodyWindowsFormsApp
                 string[] listMusic = Directory.GetFiles(folderBrowserDialog.SelectedPath, "*.mp3", allDirectoryCheckBox.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
                 musicListBox.Items.Clear();
                 musicListBox.Items.AddRange(listMusic);
+
+                Game.gameList.Clear();
+                Game.gameList.AddRange(listMusic);
             }
 
+
+        }
+
+        private void musicListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
