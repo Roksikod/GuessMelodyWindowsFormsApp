@@ -5,7 +5,8 @@ namespace GuessMelodyWindowsFormsApp
 {
     public partial class MainForm : Form
     {
-        ParametrsForm frm = new ParametrsForm();
+        ParametrsForm parametrsForm = new ParametrsForm();
+        GameForm gameForm = new GameForm();
 
         public MainForm()
         {
@@ -19,7 +20,12 @@ namespace GuessMelodyWindowsFormsApp
 
         private void parametrsButton_Click(object sender, EventArgs e)
         {            
-            frm.ShowDialog();
+            parametrsForm.ShowDialog();
+        }
+
+        private void playButton_Click(object sender, EventArgs e)
+        {
+            gameForm.ShowDialog();
         }
     }
 }
