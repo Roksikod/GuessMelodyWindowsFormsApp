@@ -47,7 +47,7 @@
             // nextButton
             // 
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nextButton.Location = new System.Drawing.Point(296, 161);
+            this.nextButton.Location = new System.Drawing.Point(655, 21);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(215, 78);
             this.nextButton.TabIndex = 1;
@@ -60,7 +60,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GuessMelodyWindowsFormsApp.Properties.Resources.melodiBild;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.winMediaPlayer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
