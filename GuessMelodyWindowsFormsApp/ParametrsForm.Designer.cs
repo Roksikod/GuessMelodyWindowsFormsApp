@@ -45,7 +45,7 @@
             this.musicListBox.Name = "musicListBox";
             this.musicListBox.Size = new System.Drawing.Size(862, 180);
             this.musicListBox.TabIndex = 0;
-            this.musicListBox.SelectedIndexChanged += new System.EventHandler(this.musicListBox_SelectedIndexChanged);
+            
             // 
             // selectFolderButton
             // 
