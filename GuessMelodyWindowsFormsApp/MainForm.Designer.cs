@@ -37,7 +37,7 @@
             // playButton
             // 
             this.playButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.playButton.Location = new System.Drawing.Point(147, 39);
+            this.playButton.Location = new System.Drawing.Point(702, 465);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(168, 64);
             this.playButton.TabIndex = 0;
@@ -48,7 +48,7 @@
             // parametrsButton
             // 
             this.parametrsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.parametrsButton.Location = new System.Drawing.Point(147, 141);
+            this.parametrsButton.Location = new System.Drawing.Point(12, 44);
             this.parametrsButton.Name = "parametrsButton";
             this.parametrsButton.Size = new System.Drawing.Size(168, 64);
             this.parametrsButton.TabIndex = 1;
@@ -59,7 +59,7 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exitButton.Location = new System.Drawing.Point(147, 236);
+            this.exitButton.Location = new System.Drawing.Point(702, 44);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(168, 64);
             this.exitButton.TabIndex = 2;
@@ -72,7 +72,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GuessMelodyWindowsFormsApp.Properties.Resources.melodiBild;
-            this.ClientSize = new System.Drawing.Size(489, 363);
+            this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.parametrsButton);
             this.Controls.Add(this.playButton);

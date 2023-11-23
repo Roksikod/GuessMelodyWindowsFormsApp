@@ -45,25 +45,24 @@
             this.musicListBox.Name = "musicListBox";
             this.musicListBox.Size = new System.Drawing.Size(862, 180);
             this.musicListBox.TabIndex = 0;
-            
             // 
             // selectFolderButton
             // 
             this.selectFolderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.selectFolderButton.Location = new System.Drawing.Point(54, 217);
+            this.selectFolderButton.Location = new System.Drawing.Point(12, 205);
             this.selectFolderButton.Name = "selectFolderButton";
-            this.selectFolderButton.Size = new System.Drawing.Size(144, 43);
+            this.selectFolderButton.Size = new System.Drawing.Size(180, 60);
             this.selectFolderButton.TabIndex = 1;
             this.selectFolderButton.Text = "Aussuchen";
             this.selectFolderButton.UseVisualStyleBackColor = true;
-            this.selectFolderButton.Click += new System.EventHandler(this.selectFolderButton_Click);
+            this.selectFolderButton.Click += new System.EventHandler(this.SelectFolderButton_Click);
             // 
             // clearListButton
             // 
             this.clearListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clearListButton.Location = new System.Drawing.Point(653, 217);
+            this.clearListButton.Location = new System.Drawing.Point(358, 205);
             this.clearListButton.Name = "clearListButton";
-            this.clearListButton.Size = new System.Drawing.Size(113, 43);
+            this.clearListButton.Size = new System.Drawing.Size(180, 60);
             this.clearListButton.TabIndex = 2;
             this.clearListButton.Text = "Leeren";
             this.clearListButton.UseVisualStyleBackColor = true;
@@ -72,7 +71,7 @@
             // 
             this.allDirectoryCheckBox.AutoSize = true;
             this.allDirectoryCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.allDirectoryCheckBox.Location = new System.Drawing.Point(262, 236);
+            this.allDirectoryCheckBox.Location = new System.Drawing.Point(729, 205);
             this.allDirectoryCheckBox.Name = "allDirectoryCheckBox";
             this.allDirectoryCheckBox.Size = new System.Drawing.Size(131, 24);
             this.allDirectoryCheckBox.TabIndex = 3;
@@ -82,30 +81,30 @@
             // okButton
             // 
             this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.okButton.Location = new System.Drawing.Point(85, 324);
+            this.okButton.Location = new System.Drawing.Point(450, 419);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(113, 52);
+            this.okButton.Size = new System.Drawing.Size(180, 60);
             this.okButton.TabIndex = 4;
             this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            this.okButton.Click += new System.EventHandler(this.OkButton_Click);
             // 
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exitButton.Location = new System.Drawing.Point(622, 314);
+            this.exitButton.Location = new System.Drawing.Point(694, 419);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(144, 52);
+            this.exitButton.Size = new System.Drawing.Size(180, 60);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Stornierungen";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ParametrsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 409);
+            this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.allDirectoryCheckBox);

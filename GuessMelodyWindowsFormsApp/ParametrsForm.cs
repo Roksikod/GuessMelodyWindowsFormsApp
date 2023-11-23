@@ -18,17 +18,18 @@ namespace GuessMelodyWindowsFormsApp
             InitializeComponent();
         }
 
-        private void okButton_Click(object sender, EventArgs e)
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            Game.WriteParametrs();
+            this.Close();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void selectFolderButton_Click(object sender, EventArgs e)
+        private void SelectFolderButton_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
 
@@ -42,8 +43,6 @@ namespace GuessMelodyWindowsFormsApp
                 Game.gameList.Clear();
                 Game.gameList.AddRange(listMusic);
             }
-
-
         }
     }
 }
