@@ -45,10 +45,5 @@ namespace GuessMelodyWindowsFormsApp
 
 
         }
-
-        private void musicListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
