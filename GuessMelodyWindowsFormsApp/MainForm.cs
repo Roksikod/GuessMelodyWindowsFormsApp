@@ -27,5 +27,11 @@ namespace GuessMelodyWindowsFormsApp
         {
             gameForm.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Game.ReadParametrs(); //read parametr when main form loaded
+            Game.ReadMusic();   // read music whem main form loaded
+        }
     }
 }

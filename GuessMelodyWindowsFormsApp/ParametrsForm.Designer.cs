@@ -36,10 +36,11 @@
             this.okButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.ParametrsGroupBox = new System.Windows.Forms.GroupBox();
-            this.gameDurationLabel = new System.Windows.Forms.Label();
-            this.musicDurationLabel = new System.Windows.Forms.Label();
-            this.gameDurationComboBox = new System.Windows.Forms.ComboBox();
+            this.randomStartCheckBox = new System.Windows.Forms.CheckBox();
             this.musicDurationComboBox = new System.Windows.Forms.ComboBox();
+            this.gameDurationComboBox = new System.Windows.Forms.ComboBox();
+            this.musicDurationLabel = new System.Windows.Forms.Label();
+            this.gameDurationLabel = new System.Windows.Forms.Label();
             this.ParametrsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +109,7 @@
             // 
             // ParametrsGroupBox
             // 
+            this.ParametrsGroupBox.Controls.Add(this.randomStartCheckBox);
             this.ParametrsGroupBox.Controls.Add(this.musicDurationComboBox);
             this.ParametrsGroupBox.Controls.Add(this.gameDurationComboBox);
             this.ParametrsGroupBox.Controls.Add(this.musicDurationLabel);
@@ -119,39 +121,15 @@
             this.ParametrsGroupBox.TabStop = false;
             this.ParametrsGroupBox.Text = "Spieleinstellungen";
             // 
-            // gameDurationLabel
+            // randomStartCheckBox
             // 
-            this.gameDurationLabel.AutoSize = true;
-            this.gameDurationLabel.Location = new System.Drawing.Point(7, 49);
-            this.gameDurationLabel.Name = "gameDurationLabel";
-            this.gameDurationLabel.Size = new System.Drawing.Size(73, 16);
-            this.gameDurationLabel.TabIndex = 0;
-            this.gameDurationLabel.Text = "Spieldauer";
-            this.gameDurationLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // musicDurationLabel
-            // 
-            this.musicDurationLabel.AutoSize = true;
-            this.musicDurationLabel.Location = new System.Drawing.Point(7, 102);
-            this.musicDurationLabel.Name = "musicDurationLabel";
-            this.musicDurationLabel.Size = new System.Drawing.Size(58, 16);
-            this.musicDurationLabel.TabIndex = 1;
-            this.musicDurationLabel.Text = "Spielzeit";
-            // 
-            // gameDurationComboBox
-            // 
-            this.gameDurationComboBox.FormattingEnabled = true;
-            this.gameDurationComboBox.Items.AddRange(new object[] {
-            "30",
-            "45",
-            "60",
-            "90",
-            "120"});
-            this.gameDurationComboBox.Location = new System.Drawing.Point(113, 41);
-            this.gameDurationComboBox.Name = "gameDurationComboBox";
-            this.gameDurationComboBox.Size = new System.Drawing.Size(47, 24);
-            this.gameDurationComboBox.TabIndex = 2;
-            this.gameDurationComboBox.Text = "60";
+            this.randomStartCheckBox.AutoSize = true;
+            this.randomStartCheckBox.Location = new System.Drawing.Point(10, 151);
+            this.randomStartCheckBox.Name = "randomStartCheckBox";
+            this.randomStartCheckBox.Size = new System.Drawing.Size(228, 20);
+            this.randomStartCheckBox.TabIndex = 4;
+            this.randomStartCheckBox.Text = "Von einer zufälligen Stelle im Lied";
+            this.randomStartCheckBox.UseVisualStyleBackColor = true;
             // 
             // musicDurationComboBox
             // 
@@ -168,7 +146,39 @@
             this.musicDurationComboBox.Size = new System.Drawing.Size(47, 24);
             this.musicDurationComboBox.TabIndex = 3;
             this.musicDurationComboBox.Text = "20";
-            this.musicDurationComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // gameDurationComboBox
+            // 
+            this.gameDurationComboBox.FormattingEnabled = true;
+            this.gameDurationComboBox.Items.AddRange(new object[] {
+            "30",
+            "45",
+            "60",
+            "90",
+            "120"});
+            this.gameDurationComboBox.Location = new System.Drawing.Point(113, 41);
+            this.gameDurationComboBox.Name = "gameDurationComboBox";
+            this.gameDurationComboBox.Size = new System.Drawing.Size(47, 24);
+            this.gameDurationComboBox.TabIndex = 2;
+            this.gameDurationComboBox.Text = "60";
+            // 
+            // musicDurationLabel
+            // 
+            this.musicDurationLabel.AutoSize = true;
+            this.musicDurationLabel.Location = new System.Drawing.Point(7, 102);
+            this.musicDurationLabel.Name = "musicDurationLabel";
+            this.musicDurationLabel.Size = new System.Drawing.Size(58, 16);
+            this.musicDurationLabel.TabIndex = 1;
+            this.musicDurationLabel.Text = "Spielzeit";
+            // 
+            // gameDurationLabel
+            // 
+            this.gameDurationLabel.AutoSize = true;
+            this.gameDurationLabel.Location = new System.Drawing.Point(7, 49);
+            this.gameDurationLabel.Name = "gameDurationLabel";
+            this.gameDurationLabel.Size = new System.Drawing.Size(73, 16);
+            this.gameDurationLabel.TabIndex = 0;
+            this.gameDurationLabel.Text = "Spieldauer";
             // 
             // ParametrsForm
             // 
@@ -185,6 +195,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ParametrsForm";
             this.Text = "Regelung";
+            this.Load += new System.EventHandler(this.ParametrsForm_Load);
             this.ParametrsGroupBox.ResumeLayout(false);
             this.ParametrsGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -205,5 +216,6 @@
         private System.Windows.Forms.Label musicDurationLabel;
         private System.Windows.Forms.ComboBox musicDurationComboBox;
         private System.Windows.Forms.ComboBox gameDurationComboBox;
+        private System.Windows.Forms.CheckBox randomStartCheckBox;
     }
 }

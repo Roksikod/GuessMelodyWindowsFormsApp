@@ -16,9 +16,14 @@ namespace GuessMelodyWindowsFormsApp
 
         public static void ReadMusic()
         {
-            string[] musicFiles = Directory.GetFiles(lastFolder, "* .mp3", allDirectories ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
-            gameList.Clear();
-            gameList.AddRange(musicFiles);
+            //exception first using
+            try
+            {
+                string[] musicFiles = Directory.GetFiles(lastFolder, "* .mp3", allDirectories ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
+                gameList.Clear();
+                gameList.AddRange(musicFiles);
+            }
+            catch { }
         }
         public static string regKeyName = "SoftWare\\MyCompanyName\\GuessMelody";
 
@@ -31,7 +36,6 @@ namespace GuessMelodyWindowsFormsApp
                 if (registryKey == null)
                 {
                     return;
-
                 }
                 registryKey.SetValue("LastFolder", lastFolder);
                 registryKey.SetValue("RandomStart", randomStart);
@@ -54,7 +58,7 @@ namespace GuessMelodyWindowsFormsApp
             RegistryKey registryKey = null;
             try
             {
-               registryKey = Registry.CurrentUser.OpenSubKey(regKeyName);
+                registryKey = Registry.CurrentUser.OpenSubKey(regKeyName);
                 if (registryKey != null)
                 {
                     lastFolder = (string)registryKey.GetValue("LastFolder");
