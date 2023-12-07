@@ -41,6 +41,9 @@
             this.countMelodyLabel = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.musicDurationLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.winMediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,12 +152,43 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // musicDurationLabel
+            // 
+            this.musicDurationLabel.AutoSize = true;
+            this.musicDurationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.musicDurationLabel.Location = new System.Drawing.Point(390, 33);
+            this.musicDurationLabel.Name = "musicDurationLabel";
+            this.musicDurationLabel.Size = new System.Drawing.Size(40, 42);
+            this.musicDurationLabel.TabIndex = 10;
+            this.musicDurationLabel.Text = "0";
+            //
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(287, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Zeit vor Antwort";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(287, 136);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "wie viel Lieder";
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GuessMelodyWindowsFormsApp.Properties.Resources.melodiBild;
             this.ClientSize = new System.Drawing.Size(882, 553);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.musicDurationLabel);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.countMelodyLabel);
             this.Controls.Add(this.continueButton);
@@ -191,5 +225,8 @@
         private System.Windows.Forms.Label countMelodyLabel;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label musicDurationLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

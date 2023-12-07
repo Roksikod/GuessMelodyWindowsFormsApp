@@ -175,9 +175,9 @@
             this.musicDurationLabel.AutoSize = true;
             this.musicDurationLabel.Location = new System.Drawing.Point(7, 102);
             this.musicDurationLabel.Name = "musicDurationLabel";
-            this.musicDurationLabel.Size = new System.Drawing.Size(58, 16);
+            this.musicDurationLabel.Size = new System.Drawing.Size(97, 16);
             this.musicDurationLabel.TabIndex = 1;
-            this.musicDurationLabel.Text = "Spielzeit";
+            this.musicDurationLabel.Text = "Zeit vor Antwort";
             // 
             // gameDurationLabel
             // 
