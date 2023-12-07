@@ -41,6 +41,10 @@
             this.gameDurationComboBox = new System.Windows.Forms.ComboBox();
             this.musicDurationLabel = new System.Windows.Forms.Label();
             this.gameDurationLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.player1ComboBox = new System.Windows.Forms.ComboBox();
+            this.player2ComboBox = new System.Windows.Forms.ComboBox();
             this.ParametrsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +113,10 @@
             // 
             // ParametrsGroupBox
             // 
+            this.ParametrsGroupBox.Controls.Add(this.player2ComboBox);
+            this.ParametrsGroupBox.Controls.Add(this.player1ComboBox);
+            this.ParametrsGroupBox.Controls.Add(this.label2);
+            this.ParametrsGroupBox.Controls.Add(this.label1);
             this.ParametrsGroupBox.Controls.Add(this.randomStartCheckBox);
             this.ParametrsGroupBox.Controls.Add(this.musicDurationComboBox);
             this.ParametrsGroupBox.Controls.Add(this.gameDurationComboBox);
@@ -167,9 +175,9 @@
             this.musicDurationLabel.AutoSize = true;
             this.musicDurationLabel.Location = new System.Drawing.Point(7, 102);
             this.musicDurationLabel.Name = "musicDurationLabel";
-            this.musicDurationLabel.Size = new System.Drawing.Size(58, 16);
+            this.musicDurationLabel.Size = new System.Drawing.Size(97, 16);
             this.musicDurationLabel.TabIndex = 1;
-            this.musicDurationLabel.Text = "Spielzeit";
+            this.musicDurationLabel.Text = "Zeit vor Antwort";
             // 
             // gameDurationLabel
             // 
@@ -179,6 +187,42 @@
             this.gameDurationLabel.Size = new System.Drawing.Size(73, 16);
             this.gameDurationLabel.TabIndex = 0;
             this.gameDurationLabel.Text = "Spieldauer";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(193, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Spieler 1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(196, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Spieler 2";
+            // 
+            // player1ComboBox
+            // 
+            this.player1ComboBox.FormattingEnabled = true;
+            this.player1ComboBox.Location = new System.Drawing.Point(267, 41);
+            this.player1ComboBox.Name = "player1ComboBox";
+            this.player1ComboBox.Size = new System.Drawing.Size(60, 24);
+            this.player1ComboBox.TabIndex = 8;
+            this.player1ComboBox.Text = "A";
+            // 
+            // player2ComboBox
+            // 
+            this.player2ComboBox.FormattingEnabled = true;
+            this.player2ComboBox.Location = new System.Drawing.Point(267, 94);
+            this.player2ComboBox.Name = "player2ComboBox";
+            this.player2ComboBox.Size = new System.Drawing.Size(60, 24);
+            this.player2ComboBox.TabIndex = 9;
+            this.player2ComboBox.Text = "P";
             // 
             // ParametrsForm
             // 
@@ -217,5 +261,9 @@
         private System.Windows.Forms.ComboBox musicDurationComboBox;
         private System.Windows.Forms.ComboBox gameDurationComboBox;
         private System.Windows.Forms.CheckBox randomStartCheckBox;
+        private System.Windows.Forms.ComboBox player2ComboBox;
+        private System.Windows.Forms.ComboBox player1ComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
