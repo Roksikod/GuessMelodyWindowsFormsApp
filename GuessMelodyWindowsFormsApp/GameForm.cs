@@ -53,14 +53,54 @@ namespace GuessMelodyWindowsFormsApp
 
         private void pauseButton_Click(object sender, EventArgs e)
         {
-            timer.Stop();
-            winMediaPlayer.Ctlcontrols.pause();
+            GamePause();
         }
 
         private void continueButton_Click(object sender, EventArgs e)
         {
+            GamePlay();
+        }
+
+        private void GamePlay()
+        {
             timer.Start();
             winMediaPlayer.Ctlcontrols.play();
+        }
+
+        private void GamePause()
+        {
+            timer.Stop();
+            winMediaPlayer.Ctlcontrols.pause();
+        }
+
+        private void GameForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData == Keys.A)
+            {
+                GamePause();
+
+                if(MessageBox.Show("Erraten?", "Spieler 1", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    counter1Label.Text = Convert.ToString(Convert.ToInt32(counter1Label.Text)+1);
+                    MakeMusic();
+                }
+
+                GamePlay();
+            }
+
+            //for the second player
+            if (e.KeyData == Keys.P)
+            {
+                GamePause();
+
+                if (MessageBox.Show("Erraten?", "Spieler 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    counter2Label.Text = Convert.ToString(Convert.ToInt32(counter2Label.Text) + 1);
+                    MakeMusic();
+                }
+
+                GamePlay();
+            }
         }
     }
 }

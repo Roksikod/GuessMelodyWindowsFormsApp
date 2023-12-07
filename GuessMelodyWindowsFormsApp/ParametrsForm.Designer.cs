@@ -43,8 +43,8 @@
             this.gameDurationLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.player1ComboBox = new System.Windows.Forms.ComboBox();
+            this.player2ComboBox = new System.Windows.Forms.ComboBox();
             this.ParametrsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,8 +113,8 @@
             // 
             // ParametrsGroupBox
             // 
-            this.ParametrsGroupBox.Controls.Add(this.comboBox2);
-            this.ParametrsGroupBox.Controls.Add(this.comboBox1);
+            this.ParametrsGroupBox.Controls.Add(this.player2ComboBox);
+            this.ParametrsGroupBox.Controls.Add(this.player1ComboBox);
             this.ParametrsGroupBox.Controls.Add(this.label2);
             this.ParametrsGroupBox.Controls.Add(this.label1);
             this.ParametrsGroupBox.Controls.Add(this.randomStartCheckBox);
@@ -193,34 +193,36 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(193, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.label1.Text = "Spieler 1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(196, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(60, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
+            this.label2.Text = "Spieler 2";
             // 
-            // comboBox1
+            // player1ComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(267, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(60, 24);
-            this.comboBox1.TabIndex = 8;
+            this.player1ComboBox.FormattingEnabled = true;
+            this.player1ComboBox.Location = new System.Drawing.Point(267, 41);
+            this.player1ComboBox.Name = "player1ComboBox";
+            this.player1ComboBox.Size = new System.Drawing.Size(60, 24);
+            this.player1ComboBox.TabIndex = 8;
+            this.player1ComboBox.Text = "A";
             // 
-            // comboBox2
+            // player2ComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(267, 94);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(60, 24);
-            this.comboBox2.TabIndex = 9;
+            this.player2ComboBox.FormattingEnabled = true;
+            this.player2ComboBox.Location = new System.Drawing.Point(267, 94);
+            this.player2ComboBox.Name = "player2ComboBox";
+            this.player2ComboBox.Size = new System.Drawing.Size(60, 24);
+            this.player2ComboBox.TabIndex = 9;
+            this.player2ComboBox.Text = "P";
             // 
             // ParametrsForm
             // 
@@ -259,8 +261,8 @@
         private System.Windows.Forms.ComboBox musicDurationComboBox;
         private System.Windows.Forms.ComboBox gameDurationComboBox;
         private System.Windows.Forms.CheckBox randomStartCheckBox;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox player2ComboBox;
+        private System.Windows.Forms.ComboBox player1ComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }
