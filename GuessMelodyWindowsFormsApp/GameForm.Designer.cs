@@ -166,6 +166,7 @@
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.winMediaPlayer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "GameForm";
             this.Text = "Musik Spiel!";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameForm_FormClosed);

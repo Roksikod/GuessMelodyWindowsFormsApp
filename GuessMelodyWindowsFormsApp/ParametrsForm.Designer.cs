@@ -41,6 +41,10 @@
             this.gameDurationComboBox = new System.Windows.Forms.ComboBox();
             this.musicDurationLabel = new System.Windows.Forms.Label();
             this.gameDurationLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.ParametrsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +113,10 @@
             // 
             // ParametrsGroupBox
             // 
+            this.ParametrsGroupBox.Controls.Add(this.comboBox2);
+            this.ParametrsGroupBox.Controls.Add(this.comboBox1);
+            this.ParametrsGroupBox.Controls.Add(this.label2);
+            this.ParametrsGroupBox.Controls.Add(this.label1);
             this.ParametrsGroupBox.Controls.Add(this.randomStartCheckBox);
             this.ParametrsGroupBox.Controls.Add(this.musicDurationComboBox);
             this.ParametrsGroupBox.Controls.Add(this.gameDurationComboBox);
@@ -180,6 +188,40 @@
             this.gameDurationLabel.TabIndex = 0;
             this.gameDurationLabel.Text = "Spieldauer";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(193, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(196, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(267, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(60, 24);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(267, 94);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(60, 24);
+            this.comboBox2.TabIndex = 9;
+            // 
             // ParametrsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -217,5 +259,9 @@
         private System.Windows.Forms.ComboBox musicDurationComboBox;
         private System.Windows.Forms.ComboBox gameDurationComboBox;
         private System.Windows.Forms.CheckBox randomStartCheckBox;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -16,7 +16,7 @@ namespace GuessMelodyWindowsFormsApp
         {
             int numberSong = random.Next(0, Game.gameList.Count);
             winMediaPlayer.URL = Game.gameList[numberSong];
-            //winMediaPlayer.Ctlcontrols.play();
+            winMediaPlayer.Ctlcontrols.play();
             Game.gameList.RemoveAt(numberSong);
             countMelodyLabel.Text = Game.gameList.Count.ToString();
         }
