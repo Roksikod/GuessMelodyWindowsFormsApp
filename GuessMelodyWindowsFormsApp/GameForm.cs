@@ -97,11 +97,14 @@ namespace GuessMelodyWindowsFormsApp
 
         private void GameForm_KeyDown(object sender, KeyEventArgs e)
         {
+            MessageForm messageForm = new MessageForm();
+
             if (e.KeyData == Keys.A)
             {
                 GamePause();
+                messageForm.messageLabel.Text = "Spieler 1";
 
-                if (MessageBox.Show("Erraten?", "Spieler 1", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (messageForm.ShowDialog() == DialogResult.Yes)
                 {
                     counter1Label.Text = Convert.ToString(Convert.ToInt32(counter1Label.Text) + 1);
                     MakeMusic();
@@ -114,8 +117,9 @@ namespace GuessMelodyWindowsFormsApp
             if (e.KeyData == Keys.P)
             {
                 GamePause();
+                messageForm.messageLabel.Text = "Spieler 2";
 
-                if (MessageBox.Show("Erraten?", "Spieler 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (messageForm.ShowDialog() == DialogResult.Yes)
                 {
                     counter2Label.Text = Convert.ToString(Convert.ToInt32(counter2Label.Text) + 1);
                     MakeMusic();
