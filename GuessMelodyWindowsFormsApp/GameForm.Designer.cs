@@ -56,6 +56,7 @@
             this.winMediaPlayer.Size = new System.Drawing.Size(247, 61);
             this.winMediaPlayer.TabIndex = 0;
             this.winMediaPlayer.Visible = false;
+            this.winMediaPlayer.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.winMediaPlayer_OpenStateChange);
             // 
             // nextButton
             // 
@@ -161,7 +162,7 @@
             this.musicDurationLabel.Size = new System.Drawing.Size(40, 42);
             this.musicDurationLabel.TabIndex = 10;
             this.musicDurationLabel.Text = "0";
-            //
+            // 
             // label3
             // 
             this.label3.AutoSize = true;

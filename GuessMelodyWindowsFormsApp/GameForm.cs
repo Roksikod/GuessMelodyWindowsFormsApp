@@ -24,7 +24,7 @@ namespace GuessMelodyWindowsFormsApp
                 musicDuration = Game.musicDuration;
                 int numberSong = random.Next(0, Game.gameList.Count);
                 winMediaPlayer.URL = Game.gameList[numberSong];
-                winMediaPlayer.Ctlcontrols.play();
+                //winMediaPlayer.Ctlcontrols.play();
                 Game.gameList.RemoveAt(numberSong);
                 countMelodyLabel.Text = Game.gameList.Count.ToString();
             }
@@ -126,6 +126,17 @@ namespace GuessMelodyWindowsFormsApp
                 }
 
                 GamePlay();
+            }
+        }
+
+        private void winMediaPlayer_OpenStateChange(object sender, AxWMPLib._WMPOCXEvents_OpenStateChangeEvent e)
+        {
+            if (Game.randomStart)
+            {
+                if (winMediaPlayer.openState == WMPLib.WMPOpenState.wmposMediaOpen)
+                {
+                    winMediaPlayer.Ctlcontrols.currentPosition = random.Next(0, (int)winMediaPlayer.currentMedia.duration / 2);
+                }
             }
         }
     }
